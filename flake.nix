@@ -71,7 +71,7 @@
           "/System/Applications/Calendar.app"
           "/Applications/Firefox.app"
           "/System/Applications/Mail.app"
-          # "${homebrew.masApps.Singularity}/Applications/Singularity.app"
+          "/Applications/SingularityApp.app"
           "${pkgs.iterm2}/Applications/iTerm2.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
           "${pkgs.telegram-desktop}/Applications/Telegram.app"
