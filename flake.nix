@@ -27,6 +27,9 @@
       homebrew = {
         enable = true;
         casks = [
+          "betterdisplay"
+          "brave-browser"
+          "notion"
         ];
         brews = [
           "colima"
@@ -35,6 +38,7 @@
 
         masApps = {
           "Singularity" = 1481535767;
+          "Xcode" = 497799835;
           # "1Password for Safari" = 1569813296;
         };
 
@@ -49,6 +53,8 @@
       environment.systemPackages =
         with pkgs; [
           tmux
+          git
+          go
           hugo
           watch
           docker
@@ -66,16 +72,16 @@
 
       # darwin-help, mynixos.com
       system.defaults = {
-        dock.persistent-apps = [
-          "/System/Library/CoreServices/Finder.app"
-          "/System/Applications/Calendar.app"
-          "/Applications/Firefox.app"
-          "/System/Applications/Mail.app"
-          "/Applications/SingularityApp.app"
-          "${pkgs.iterm2}/Applications/iTerm2.app"
-          "${pkgs.obsidian}/Applications/Obsidian.app"
-          "${pkgs.telegram-desktop}/Applications/Telegram.app"
-        ];
+        # dock.persistent-apps = [
+        #   "/System/Library/CoreServices/Finder.app"
+        #   "/System/Applications/Calendar.app"
+        #   "/Applications/Firefox.app"
+        #   "/System/Applications/Mail.app"
+        #   "/Applications/SingularityApp.app"
+        #   "${pkgs.iterm2}/Applications/iTerm2.app"
+        #   "${pkgs.obsidian}/Applications/Obsidian.app"
+        #   "${pkgs.telegram-desktop}/Applications/Telegram.app"
+        # ];
         finder.FXPreferredViewStyle = "clmv";
         loginwindow.GuestEnabled = false;
 
