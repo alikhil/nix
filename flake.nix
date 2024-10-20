@@ -39,6 +39,9 @@
         masApps = {
           "Singularity" = 1481535767;
           "Xcode" = 497799835;
+          "Ethernet Status" = 1186187538;
+          "iMovie" = 408981434;
+          "Wireguard" = 1451685025;
           # "1Password for Safari" = 1569813296;
         };
 
@@ -68,6 +71,7 @@
           jq
           inetutils # telnet
           kubectl
+          iperf3
         ];
 
       # darwin-help, mynixos.com
