@@ -72,6 +72,7 @@
           inetutils # telnet
           kubectl
           iperf3
+          nmap
         ];
 
       # darwin-help, mynixos.com
