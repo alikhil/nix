@@ -74,6 +74,7 @@
           kubectl
           iperf3
           nmap
+          pre-commit
         ];
 
       # darwin-help, mynixos.com
