@@ -30,6 +30,7 @@
           "betterdisplay"
           "brave-browser"
           "notion"
+          "deepl"
         ];
         brews = [
           "colima"
