@@ -75,6 +75,7 @@
           iperf3
           nmap
           pre-commit
+          gitleaks
         ];
 
       # darwin-help, mynixos.com
