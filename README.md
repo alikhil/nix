@@ -21,3 +21,9 @@ darwin-rebuild switch --flake ~/nix#mini
 nix flake update
 nix run nix-darwin -- switch --flake ~/nix#mini
 ```
+
+## Pre-commit
+
+```shell
+pre-commit install
+```
