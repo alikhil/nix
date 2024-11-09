@@ -26,8 +26,9 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#mini
     darwinConfigurations."mini" = nix-darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
       modules = [
-        ./configuration.nix
+        ./darwin.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;

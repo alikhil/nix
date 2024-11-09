@@ -1,4 +1,4 @@
-{ self, pkgs, config, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, ... }: {
+{ self, nix-darwin, pkgs, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, ... }: {
 
       nixpkgs.config.allowUnfree = true;
 
@@ -88,7 +88,7 @@
       # programs.fish.enable = true;
 
       # Set Git commit hash for darwin-version.
-      system.configurationRevision = self.rev or self.dirtyRev or null;
+      # system.configurationRevision = self.rev or self.dirtyRev or null;
 
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
@@ -96,4 +96,10 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
+
+      users.users.alikkhilazhev = {
+        name = "alikkhilazhev";
+        home = "/Users/alikkhilazhev";
+    };
+
 }
