@@ -1,4 +1,4 @@
-{ pkgs, config, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, ... }: {
+{ self, pkgs, config, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, ... }: {
 
       nixpkgs.config.allowUnfree = true;
 
