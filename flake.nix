@@ -24,9 +24,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Because firefox is broken on mac
+    nixpkgs-firefox-darwin.url = "github:bandithedoge/nixpkgs-firefox-darwin";
+    nur.url = "github:nix-community/NUR";
+
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, home-manager, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, home-manager, nur, nixpkgs-firefox-darwin, ... }:
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#mini
@@ -76,6 +80,8 @@
         {
           nixpkgs.overlays = [
             inputs.nix-vscode-extensions.overlays.default
+            nixpkgs-firefox-darwin.overlay
+            nur.overlay
           ];
         }
         home-manager.darwinModules.home-manager

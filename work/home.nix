@@ -65,6 +65,10 @@
     EDITOR = "nano";
   };
 
+  home.sessionPath = [
+    "/opt/homebrew/bin"
+  ];
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   programs.git = {
@@ -94,7 +98,7 @@
       enable = true;
       theme = "robbyrussell";
     };
-    shellAliases = import ../common/aliases.nix;
+    shellAliases = import ../common/aliases.nix // import ./aliases.nix;
   };
 
   programs.vscode = {
