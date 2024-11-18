@@ -15,7 +15,7 @@
 		"*.hcl": "terragrunt"
 	},
 	"C_Cpp.intelliSenseEngine": "Default",
-	// "workbench.panel.location": "bottom",
+
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"python.disablePromptForFeatures": [

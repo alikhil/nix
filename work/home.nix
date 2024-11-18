@@ -98,7 +98,8 @@
   };
 
   programs.vscode = {
-    #   # https://nixos.wiki/wiki/Visual_Studio_Code
+    # https://nixos.wiki/wiki/Visual_Studio_Code
+    # https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
     enable = true;
 
     extensions = with pkgs.vscode-marketplace; [
@@ -144,8 +145,6 @@
       ms-python.isort
       ms-python.python
       ms-python.vscode-pylance
-      ms-vscode-remote.remote-containers
-      ms-vscode-remote.remote-ssh-edit
       ms-vscode-remote.vscode-remote-extensionpack
       ms-vscode.makefile-tools
       ms-vscode.remote-explorer
@@ -179,6 +178,6 @@
       zxh404.vscode-proto3
       bbenoist.nix
     ];
-    settings = (builtins.readFile "./vscode.settings.json");
+    userSettings = builtins.fromJSON (builtins.readFile ./vscode/settings.json);
   };
 }
