@@ -95,7 +95,7 @@
             };
 
             # Automatically migrate existing Homebrew installations
-            autoMigrate = true;
+            # autoMigrate = true;
           };
         }
       ];
