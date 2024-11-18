@@ -1,0 +1,260 @@
+{
+	"python.pythonPath": "/usr/bin/python",
+	"todo-tree.tree.showScanModeButton": false,
+	"workbench.iconTheme": "vscode-icons",
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 4,
+	"editor.autoIndent": "full",
+	"extensions.ignoreRecommendations": false,
+	"vsicons.dontShowNewVersionMessage": true,
+	"files.associations": {
+		"*j2.yml": "jinja-yaml",
+		"*j2.yaml": "jinja-yaml",
+		"*.go": "go",
+		"*.yaml": "yaml",
+		"*.hcl": "terragrunt"
+	},
+	"C_Cpp.intelliSenseEngine": "Default",
+
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"python.disablePromptForFeatures": [
+		"pylint"
+	],
+	"workbench.editor.tabSizing": "shrink",
+	"git.autofetch": true,
+	"terminal.integrated.shellArgs.osx": [
+		"-l"
+	],
+	"go.autocompleteUnimportedPackages": true,
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	},
+	"gitlens.historyExplorer.enabled": true,
+	"go.testTimeout": "60s",
+	"[go]": {
+		"editor.insertSpaces": true,
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		},
+		"editor.snippetSuggestions": "none"
+	},
+	"[go.mod]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
+	},
+	"gopls": {
+		"usePlaceholders": true,
+		"staticcheck": false
+	},
+	"go.languageServerExperimentalFeatures": {
+		"format": false,
+		"autoComplete": true
+	},
+	"explorer.autoReveal": "focusNoScroll",
+	"go.liveErrors": {
+		"enabled": true,
+		"delay": 500
+	},
+	"terminal.integrated.copyOnSelection": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"prettier.useTabs": true,
+	"workbench.editor.limit.value": 3,
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.enabled": true,
+	"workbench.colorTheme": "One Dark Pro Mix",
+	"kite.showWelcomeNotificationOnStartup": false,
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"kite.showGoBetaNotification": false,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"go.buildTags": "-v",
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"task.problemMatchers.neverPrompt": {
+		"shell": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"go.toolsManagement.autoUpdate": true,
+	"cSpell.userWords": [
+		"alikhil",
+		"appmetrica",
+		"automaxprocs",
+		"bufferize",
+		"bufferized",
+		"Bufferizer",
+		"configurator",
+		"criteo",
+		"dbname",
+		"Debugf",
+		"Dosug",
+		"Elektronika",
+		"exif",
+		"Falsef",
+		"floatingips",
+		"GCORE",
+		"Getenv",
+		"ghcr",
+		"gobreaker",
+		"gochecknoglobals",
+		"godotenv",
+		"golangci",
+		"gomnd",
+		"gomock",
+		"gorutine",
+		"GRAFANA",
+		"grivna",
+		"Infof",
+		"IOSURL",
+		"jaegertracing",
+		"jmoiron",
+		"joho",
+		"kazanexpress",
+		"Krasota",
+		"Kube",
+		"kubernetes",
+		"llog",
+		"lquery",
+		"Memoizer",
+		"mytarget",
+		"nolint",
+		"OGRN",
+		"ogrnip",
+		"olivere",
+		"otel",
+		"partitioner",
+		"partr",
+		"Postgres",
+		"psql",
+		"repos",
+		"reviewdog",
+		"Rrsets",
+		"salyuty",
+		"sdktrace",
+		"semconv",
+		"Skus",
+		"slackext",
+		"Sprintf",
+		"sqext",
+		"Sqlizer",
+		"sqlx",
+		"stretchr",
+		"syncer",
+		"tcase",
+		"terragrunt",
+		"texnikapro",
+		"tflint",
+		"tfplan",
+		"tolerations",
+		"Tracef",
+		"Truef",
+		"tsuite",
+		"Unhide",
+		"unhides",
+		"Unmarshaled",
+		"unnest",
+		"VKUTM",
+		"Warnf",
+		"xiaomi",
+		"xmlx",
+		"yaclient",
+		"yadirect",
+		"yamarket",
+		"ycapi",
+		"Отсылка"
+	],
+	"cSpell.ignoreRegExpList": [
+		"[а-я]+",
+		"[А-Я]+"
+	],
+	"redhat.telemetry.enabled": false,
+	"editor.largeFileOptimizations": false,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"python.languageServer": "Pylance",
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter"
+	},
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		}
+	],
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"git.confirmSync": false,
+	"[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	},
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+	"[jsonnet]": {
+		"editor.defaultFormatter": "Sebbia.jsonnetng"
+	},
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false,
+		"yaml": false
+	},
+	"githubPullRequests.pullBranch": "never",
+	"[python]": {
+		"editor.formatOnType": true
+	},
+	"terminal.integrated.env.osx": {
+		"FIG_NEW_SESSION": "1",
+		"KUBECONFIG": "${env:HOME}/.kube/config.yaml"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"git.enableSmartCommit": true,
+	"[go][go.mod]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
+	},
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"diffEditor.ignoreTrimWhitespace": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"remote.SSH.enableAgentForwarding": true,
+	"remote.SSH.useLocalServer": false,
+	"remote.SSH.useExecServer": false,
+	"remote.SSH.remoteServerListenOnSocket": true,
+	"remote.SSH.remotePlatform": {
+		"rivendell.home.denest.one": "linux"
+	}
+}

@@ -1,6 +1,6 @@
 # home.nix
 
-{ config, pkgs, nixpkgs, ... }:
+{ config, pkgs, nixpkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -124,7 +124,6 @@
       foxundermoon.shell-format
       fredwangwang.vscode-hcl-format
       github.copilot
-      github.copilot-chat
       golang.go
       hangxingliu.vscode-nginx-conf-hint
       hashicorp.hcl
@@ -178,6 +177,9 @@
       zxh404.vscode-proto3
       bbenoist.nix
     ];
-    userSettings = builtins.fromJSON (builtins.readFile ./vscode/settings.json);
+    userSettings = lib.mkMerge [
+      builtins.fromJSON (builtins.readFile ../common/vscode/settings.json)
+      builtins.fromJSON (builtins.readFile ./vscode/settings.json)
+      ];
   };
 }
