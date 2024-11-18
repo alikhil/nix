@@ -51,6 +51,7 @@
       zsh
       firefox-bin
       google-cloud-sdk
+      glab
     ];
 
   # darwin-help, mynixos.com

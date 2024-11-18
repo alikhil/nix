@@ -99,6 +99,9 @@
       theme = "robbyrussell";
     };
     shellAliases = import ../common/aliases.nix // import ./aliases.nix;
+    initExtra = ''
+  . "''${HOME}/.secret-env";
+'';
   };
 
   programs.vscode = {
