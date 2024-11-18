@@ -177,9 +177,10 @@
       zxh404.vscode-proto3
       bbenoist.nix
     ];
-    userSettings = lib.mkMerge [
-      builtins.fromJSON (builtins.readFile ../common/vscode/settings.json)
+    userSettings =
+      builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) //
       builtins.fromJSON (builtins.readFile ./vscode/settings.json)
-      ];
+    ;
+
   };
 }
