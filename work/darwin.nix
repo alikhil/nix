@@ -2,31 +2,31 @@
 
       nixpkgs.config.allowUnfree = true;
 
-      # homebrew = {
-      #   enable = false;
-      #   casks = [
-      #     "betterdisplay"
-      #     "deepl"
-      #   ];
-      #   brews = [
-      #     "colima"
-      #     "mas" # for querying the Mac App Store: mas search "Singularity"
-      #     "python"
-      #     "libpq"
-      #   ];
+      homebrew = {
+        enable = true;
+        casks = [
+          "betterdisplay"
+          "deepl"
+        ];
+        brews = [
+          "colima"
+          "mas" # for querying the Mac App Store: mas search "Singularity"
+          "python"
+          "libpq"
+        ];
 
-      #   masApps = {
-      #     "Singularity" = 1481535767;
-      #     "Xcode" = 497799835;
-      #     "Wireguard" = 1451685025;
-      #     "1Password for Safari" = 1569813296;
-      #   };
+        # masApps = {
+        #   "Singularity" = 1481535767;
+        #   "Xcode" = 497799835;
+        #   "Wireguard" = 1451685025;
+        #   "1Password for Safari" = 1569813296;
+        # };
 
 
-      #   onActivation.cleanup = "zap";
-      #   onActivation.autoUpdate = true;
-      #   onActivation.upgrade = true;
-      # };
+        onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
+      };
 
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
@@ -48,7 +48,9 @@
           gitleaks
           devenv
           nixpkgs-fmt
-	  vscode
+          vscode
+          raycast
+          zsh
         ];
 
       # darwin-help, mynixos.com
@@ -92,6 +94,7 @@
       users.users."a.khilazhev" = {
         name = "a.khilazhev";
         home = "/Users/a.khilazhev";
+        shell = pkgs.zsh;
     };
 
 }
