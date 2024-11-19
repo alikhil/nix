@@ -40,6 +40,7 @@
       jq
       inetutils # telnet
       kubectl
+      kubectx
       iperf3
       nmap
       pre-commit
@@ -52,6 +53,8 @@
       firefox-bin
       google-cloud-sdk
       glab
+      direnv
+      tree
     ];
 
   # darwin-help, mynixos.com

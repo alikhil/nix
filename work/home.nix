@@ -97,6 +97,9 @@
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
+      plugins = [
+        "direnv"
+      ];
     };
     shellAliases = import ../common/aliases.nix // import ./aliases.nix;
     initExtra = ''
@@ -159,7 +162,6 @@
       ms-vscode.remote-explorer
       ms-vscode.remote-server
       ms-vsliveshare.vsliveshare
-      mtxr.sqltools
       quicktype.quicktype
       raynigon.nginx-formatter
       redhat.vscode-commons
@@ -208,6 +210,14 @@
 
     extraConfig = ''
       Include /Users/a.khilazhev/.colima/ssh_config
+    '';
+  };
+
+  programs.direnv = {
+    enable = true;
+    config = builtins.fromTOML ''
+      [whitlest]
+      prefix = ["/Users/a.khilazhev/projects/iponweb"]
     '';
   };
 }
