@@ -100,8 +100,11 @@
     };
     shellAliases = import ../common/aliases.nix // import ./aliases.nix;
     initExtra = ''
-  . "''${HOME}/.secret-env";
-'';
+      . "''${HOME}/.secret-env";
+      bindkey -e
+      bindkey '^[[1;9C' forward-word
+      bindkey '^[[1;9D' backward-word
+    '';
   };
 
   programs.vscode = {
@@ -189,5 +192,22 @@
       builtins.fromJSON (builtins.readFile ./vscode/settings.json)
     ;
 
+  };
+
+  programs.ssh = {
+    enable = true;
+    addKeysToAgent = "yes";
+
+    matchBlocks = {
+      "*.iponweb.net" = {
+        user = "akhilazhev_criteo";
+        forwardAgent = true;
+        identityFile = "~/.ssh/id_ed25519";
+      };
+    };
+
+    extraConfig = ''
+      Include /Users/a.khilazhev/.colima/ssh_config
+    '';
   };
 }

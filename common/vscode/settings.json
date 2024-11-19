@@ -4,6 +4,7 @@
 	"editor.minimap.enabled": false,
 	"editor.tabSize": 4,
 	"editor.autoIndent": "full",
+	"editor.formatOnSave": true,
 	"extensions.ignoreRecommendations": false,
 	"vsicons.dontShowNewVersionMessage": true,
 	"files.associations": {
