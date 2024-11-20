@@ -38,27 +38,7 @@
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  home.file = {
-    ".colima/_lima/_config/override.yaml".text = ''
-      # mountType: 9p
-      # mounts:
-      # - location: "/Users/a.khilazhev"
-      #   writable: true
-      #   9p:
-      #     securityModel: mapped-xattr
-      #     cache: mmap
-      # - location: "~"
-      #   writable: true
-      #   9p:
-      #     securityModel: mapped-xattr
-      #     cache: mmap
-      # - location: /tmp/colima
-      #   writable: true
-      #   9p:
-      #     securityModel: mapped-xattr
-      #     cache: mmap
-    '';
-  };
+  home.file = { };
 
   # You can also manage environment variables but you will have to manually
   # source
