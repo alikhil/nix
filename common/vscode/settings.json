@@ -15,7 +15,6 @@
 		"*.hcl": "terragrunt"
 	},
 	"C_Cpp.intelliSenseEngine": "Default",
-
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"python.disablePromptForFeatures": [
@@ -32,7 +31,6 @@
 	},
 	"gitlens.historyExplorer.enabled": true,
 	"go.testTimeout": "60s",
-
 	"explorer.autoReveal": "focusNoScroll",
 	"go.liveErrors": {
 		"enabled": true,
@@ -45,16 +43,13 @@
 	"workbench.editor.limit.perEditorGroup": true,
 	"workbench.editor.limit.enabled": true,
 	"workbench.colorTheme": "One Dark Pro Mix",
-
 	"go.buildTags": "-v",
-
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
 	"task.problemMatchers.neverPrompt": {
 		"shell": true
 	},
-
 	"go.toolsManagement.autoUpdate": true,
 	"cSpell.ignoreRegExpList": [
 		"[а-я]+",
@@ -68,10 +63,8 @@
 		"editor.defaultFormatter": "raynigon.nginx-formatter"
 	},
 	"git.confirmSync": false,
-
 	"files.trimTrailingWhitespace": true,
 	"files.trimFinalNewlines": true,
-
 	"editor.inlineSuggest.enabled": true,
 	"github.copilot.enable": {
 		"*": true,
@@ -130,7 +123,8 @@
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"[shellscript]": {
-		"editor.defaultFormatter": "foxundermoon.shell-format"
+		"editor.defaultFormatter": "foxundermoon.shell-format",
+		"editor.formatOnSave": false
 	},
 	"[xml]": {
 		"editor.defaultFormatter": "DotJoshJohnson.xml"
