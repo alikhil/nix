@@ -50,7 +50,7 @@
       vscode
       raycast
       zsh
-      firefox-bin
+      # firefox-bin
       google-cloud-sdk
       glab
       direnv

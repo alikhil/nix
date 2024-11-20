@@ -69,11 +69,11 @@
       core = {
         editor = "nano";
       };
-      # url = {
-      #   "git@github.com:" = {
-      #     insteadOf = "https://github.com/";
-      #   };
-      # };
+      url = {
+        "git@gitlab.iponweb.net:" = {
+          insteadOf = "https://gitlab.iponweb.net/";
+        };
+      };
       # pull = {
       #   rebase = true;
       # };
