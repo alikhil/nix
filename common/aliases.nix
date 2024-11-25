@@ -14,9 +14,9 @@
   klaw = "kubectl get pods --all-namespaces -o wide";
   kall = "kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found";
 
-  kns = "kubectl ns";
-  ktx = "kubectl ctx";
-  kctx = "kubectl ctx";
+  kns = "kubens";
+  ktx = "kubectx";
+  kctx = "kubectx";
   klss = "kubectl get pods -o custom-columns=NAME:.metadata.name,SELECTOR:.spec.nodeSelector";
   kgn = "kubectl get nodes -L app_type";
   k = "kubectl";

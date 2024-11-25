@@ -20,6 +20,7 @@
   home.packages = with pkgs; [
     python3
     pyenv
+    (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin ])
     # zsh
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -88,6 +89,7 @@
       theme = "robbyrussell";
       plugins = [
         "direnv"
+        "kube-ps1"
       ];
     };
     shellAliases = import ../common/aliases.nix // import ./aliases.nix;
@@ -96,6 +98,8 @@
       bindkey -e
       bindkey '^[[1;9C' forward-word
       bindkey '^[[1;9D' backward-word
+
+      PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
     '';
   };
 
