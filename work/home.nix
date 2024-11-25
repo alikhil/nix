@@ -199,6 +199,9 @@
         user = "akhilazhev_criteo";
         forwardAgent = true;
         identityFile = "~/.ssh/id_ed25519";
+        extraOptions = {
+          StrictHostKeyChecking = "no";
+        };
       };
     };
 
