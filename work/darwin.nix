@@ -55,6 +55,7 @@
       glab
       direnv
       tree
+      yamllint
     ];
 
   # darwin-help, mynixos.com
