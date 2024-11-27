@@ -11,6 +11,7 @@
     brews = [
       "colima"
       "mas" # for querying the Mac App Store: mas search "Singularity"
+      "helm"
     ];
 
     # masApps = {
@@ -56,6 +57,7 @@
       direnv
       tree
       yamllint
+      commitizen
     ];
 
   # darwin-help, mynixos.com
