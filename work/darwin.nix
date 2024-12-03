@@ -58,6 +58,7 @@
       tree
       yamllint
       commitizen
+      terraform
     ];
 
   # darwin-help, mynixos.com

@@ -21,6 +21,7 @@
     python3
     pyenv
     (google-cloud-sdk.withExtraComponents [ google-cloud-sdk.components.gke-gcloud-auth-plugin ])
+    shfmt
     # zsh
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -53,6 +54,7 @@
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     EDITOR = "nano";
+    KUBECONFIG = "/Users/a.khilazhev/.kube/config.yaml";
   };
 
   home.sessionPath = [
