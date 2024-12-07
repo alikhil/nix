@@ -37,12 +37,12 @@
       darwinConfigurations."mini" = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./darwin.nix
+          ./home/darwin.nix
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.alikkhilazhev = import ./home.nix;
+            home-manager.users.alikkhilazhev = import ./home/home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix

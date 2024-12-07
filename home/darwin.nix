@@ -59,6 +59,7 @@
       gitleaks
       devenv
       nixpkgs-fmt
+      commitizen
     ];
 
   # darwin-help, mynixos.com
