@@ -9,6 +9,7 @@
       "brave-browser"
       "notion"
       "deepl"
+      "hammerspoon"
     ];
     brews = [
       "colima"
@@ -60,6 +61,8 @@
       devenv
       nixpkgs-fmt
       commitizen
+      hadolint
+      whois
     ];
 
   # darwin-help, mynixos.com

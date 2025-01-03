@@ -1,0 +1,16 @@
+#!/usr/bin/osascript
+
+set imgPath to POSIX file "/Users/alikkhilazhev/Library/Mobile Documents/com~apple~CloudDocs/background.png" as alias
+tell application "Preview"
+    open imgPath
+    activate
+    tell application "System Events"
+        tell process "Preview"
+            set frontmost to true
+            click menu bar item "View" of menu bar 1
+            click menu item "Enter Full Screen" of menu "View" of menu bar item "View" of menu bar 1
+        end tell
+        delay 30
+        tell application "Preview" to if it is running then quit
+    end tell
+end tell
