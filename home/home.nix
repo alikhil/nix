@@ -70,9 +70,43 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nano";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  programs.git = {
+    enable = true;
+    userEmail = "git@alik.page";
+    userName = "Alik Khilazhev";
+    ignores = [ "*~" ".DS_Store" ];
+    extraConfig = {
+      core = {
+        editor = "nano";
+      };
+    };
+  };
+
+programs.zsh = {
+    # https://rycee.gitlab.io/home-manager/options.xhtml#opt-programs.zsh.enable
+    enable = true;
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [
+        "direnv"
+        "kube-ps1"
+        "git"
+      ];
+    };
+    shellAliases = import ../common/aliases.nix // import ./aliases.nix;
+    initExtra = ''
+      bindkey -e
+      bindkey '^[[1;9C' forward-word
+      bindkey '^[[1;9D' backward-word
+
+      PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
+    '';
+  };
+
 }
