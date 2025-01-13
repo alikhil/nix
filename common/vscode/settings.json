@@ -25,17 +25,11 @@
 	"terminal.integrated.shellArgs.osx": [
 		"-l"
 	],
-	"go.autocompleteUnimportedPackages": true,
 	"gitlens.advanced.messages": {
 		"suppressShowKeyBindingsNotice": true
 	},
 	"gitlens.historyExplorer.enabled": true,
-	"go.testTimeout": "60s",
 	"explorer.autoReveal": "focusNoScroll",
-	"go.liveErrors": {
-		"enabled": true,
-		"delay": 500
-	},
 	"terminal.integrated.copyOnSelection": true,
 	"workbench.editor.highlightModifiedTabs": true,
 	"prettier.useTabs": true,
@@ -43,14 +37,12 @@
 	"workbench.editor.limit.perEditorGroup": true,
 	"workbench.editor.limit.enabled": true,
 	"workbench.colorTheme": "One Dark Pro Mix",
-	"go.buildTags": "-v",
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
 	"task.problemMatchers.neverPrompt": {
 		"shell": true
 	},
-	"go.toolsManagement.autoUpdate": true,
 	"cSpell.ignoreRegExpList": [
 		"[а-я]+",
 		"[А-Я]+"
@@ -91,28 +83,6 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[go]": {
-		"editor.insertSpaces": true,
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
-		},
-		"editor.snippetSuggestions": "none"
-	},
-	"[go.mod]": {
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
-		}
-	},
-	"gopls": {
-		"usePlaceholders": true,
-		"staticcheck": false
-	},
-	"go.languageServerExperimentalFeatures": {
-		"format": false,
-		"autoComplete": true
-	},
 	"[python]": {
 		"editor.formatOnType": true
 	},
@@ -140,5 +110,48 @@
 	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"[go]": {
+		"editor.insertSpaces": true,
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		},
+		"editor.snippetSuggestions": "none"
+	},
+	"[go.mod]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
+	},
+	"gopls": {
+		"usePlaceholders": true,
+		"staticcheck": false
+	},
+	"go.languageServerExperimentalFeatures": {
+		"format": false,
+		"autoComplete": true
+	},
+	"go.alternateTools": {
+		"go": "${workspaceRoot}/.devenv/profile/bin/go",
+		"gomodifytags": "${workspaceRoot}/.devenv/profile/bin/gomodifytags",
+		"godef": "${workspaceRoot}/.devenv/profile/bin/godef",
+		"gofmt": "${workspaceRoot}/.devenv/profile/bin/gofmt",
+		"goimports": "${workspaceRoot}/.devenv/profile/bin/goimports",
+		"gopls": "${workspaceRoot}/.devenv/profile/bin/gopls",
+		"godoc": "${workspaceRoot}/.devenv/profile/bin/godoc",
+		"gotests": "${workspaceRoot}/.devenv/profile/bin/gotests",
+		"godex": "${workspaceRoot}/.devenv/profile/bin/godex",
+		"dlv": "${workspaceRoot}/.devenv/profile/bin/dlv"
+	},
+	"go.formatTool": "gofmt",
+	"go.autocompleteUnimportedPackages": true,
+	"go.testTimeout": "60s",
+	"go.liveErrors": {
+		"enabled": true,
+		"delay": 500
+	},
+	"go.buildTags": "-v",
+	"go.toolsManagement.autoUpdate": true
 }
