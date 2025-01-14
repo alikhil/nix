@@ -59,6 +59,7 @@
       yamllint
       commitizen
       terraform
+      consul
     ];
 
   # darwin-help, mynixos.com
