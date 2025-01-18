@@ -25,6 +25,7 @@
       "Ethernet Status" = 1186187538;
       "iMovie" = 408981434;
       "Wireguard" = 1451685025;
+      "Parcel" = 639968404;
       # "1Password for Safari" = 1569813296;
     };
 
