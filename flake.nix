@@ -81,7 +81,7 @@
             nixpkgs.overlays = [
               inputs.nix-vscode-extensions.overlays.default
               nixpkgs-firefox-darwin.overlay
-              nur.overlay
+              nur.overlays.default
             ];
           }
           home-manager.darwinModules.home-manager

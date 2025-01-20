@@ -184,6 +184,7 @@
       zxh404.vscode-proto3
       bbenoist.nix
       puppet.puppet-vscode
+      grafana.vscode-jsonnet
     ];
     userSettings =
       builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) //
