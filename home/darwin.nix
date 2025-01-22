@@ -17,6 +17,7 @@
       "python"
       "libpq"
       "ffmpeg"
+      "qcachegrind"
     ];
 
     masApps = {
