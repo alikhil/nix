@@ -18,6 +18,10 @@
       "libpq"
       "ffmpeg"
       "qcachegrind"
+      "make"
+      "ninja"
+      "dfu-util"
+      "ccache"
     ];
 
     masApps = {
