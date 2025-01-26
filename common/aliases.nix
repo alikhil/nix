@@ -39,5 +39,5 @@
   dlogs = "docker compose logs -f --tail=200";
 
   tfdoc = "terraform-docs markdown table";
-
+  colima-start = "colima start --ssh-agent --cpu 4 --memory 4 --vm-type vz --vz-rosetta --very-verbose -a aarch64";
 }
