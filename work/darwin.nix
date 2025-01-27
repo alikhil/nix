@@ -13,6 +13,7 @@
       "mas" # for querying the Mac App Store: mas search "Singularity"
       "helm"
       "jsonnet"
+      "terraform-docs"
     ];
 
     # masApps = {
