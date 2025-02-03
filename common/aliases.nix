@@ -21,8 +21,8 @@
   kgn = "kubectl get nodes -L app_type";
   k = "kubectl";
   ktl = "kubectl";
-  refreshes = "kubectl get es -A --no-headers | awk '{printf \"es/%s -n %s\", \$2, \$1; print \"\n\" }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
-  refreshcss = "kubectl get css --no-headers | awk '{printf \"css/%s\", \$1; print \"\n\" }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
+  refreshes = "kubectl get es -A --no-headers | awk '{printf \"es/%s -n %s\\n\", \$2, \$1; }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
+  refreshcss = "kubectl get css --no-headers | awk '{printf \"css/%s\\n\", \$1; }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
 
   kill_md = "launchctl unload /Library/LaunchAgents/com.microsoft.wdav.tray.plist";
 
