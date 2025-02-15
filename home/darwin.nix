@@ -69,6 +69,8 @@
       commitizen
       hadolint
       whois
+      yandex-cloud
+      terraform
     ];
 
   # darwin-help, mynixos.com
