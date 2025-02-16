@@ -60,6 +60,7 @@
       jq
       inetutils # telnet
       kubectl
+      kubectx
       iperf3
       nmap
       pre-commit
