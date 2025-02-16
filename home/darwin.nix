@@ -22,6 +22,7 @@
       "ninja"
       "dfu-util"
       "ccache"
+      "helm"
     ];
 
     masApps = {
@@ -61,6 +62,7 @@
       inetutils # telnet
       kubectl
       kubectx
+      helmfile
       iperf3
       nmap
       pre-commit
