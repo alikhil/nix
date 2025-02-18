@@ -21,6 +21,7 @@
     #   "Xcode" = 497799835;
     #   "Wireguard" = 1451685025;
     #   "1Password for Safari" = 1569813296;
+    #   "Hidden Bar" = 1452453066;
     # };
 
 
@@ -62,6 +63,7 @@
       commitizen
       terraform
       consul
+      awscli
     ];
 
   # darwin-help, mynixos.com
