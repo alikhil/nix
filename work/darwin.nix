@@ -14,6 +14,7 @@
       "helm"
       "jsonnet"
       "terraform-docs"
+      "terragrunt"
     ];
 
     # masApps = {
@@ -83,8 +84,6 @@
 
   };
 
-  # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
 
   # Necessary for using flakes on this system.
@@ -110,6 +109,5 @@
     shell = pkgs.zsh;
   };
 
-  security.pam.enableSudoTouchIdAuth = true;
-
+  security.pam.services.sudo_local.touchIdAuth = true;
 }

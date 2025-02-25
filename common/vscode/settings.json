@@ -59,7 +59,7 @@
 	"files.trimFinalNewlines": true,
 	"editor.inlineSuggest.enabled": true,
 	"github.copilot.enable": {
-		"*": true,
+		"*": false,
 		"plaintext": true,
 		"markdown": true,
 		"scminput": false

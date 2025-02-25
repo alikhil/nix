@@ -104,11 +104,11 @@
       PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
     '';
   };
-
-  programs.vscode = {
+  programs.vscode.enable = true;
+  programs.vscode.profiles.default = {
     # https://nixos.wiki/wiki/Visual_Studio_Code
     # https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
-    enable = true;
+
 
     extensions = with pkgs.vscode-marketplace; [
       adamhartford.vscode-base64
@@ -131,7 +131,6 @@
       fisheva.eva-theme
       foxundermoon.shell-format
       fredwangwang.vscode-hcl-format
-      github.copilot
       golang.go
       hangxingliu.vscode-nginx-conf-hint
       hashicorp.hcl
@@ -185,6 +184,8 @@
       bbenoist.nix
       puppet.puppet-vscode
       grafana.vscode-jsonnet
+      fredwangwang.vscode-hcl-format
+      betajob.modulestf
     ];
     userSettings =
       builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) //
