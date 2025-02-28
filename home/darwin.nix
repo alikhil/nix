@@ -99,6 +99,7 @@
 
   # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
+  nix.settings.extra-trusted-users = "alikkhilazhev";
   nix.settings.extra-substituters = "https://devenv.cachix.org";
   nix.settings.extra-trusted-public-keys = "nixpkgs-python.cachix.org-1:hxjI7pFxTyuTHn2NkvWCrAUcNZLNS3ZAvfYNuYifcEU= devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
   # Create /etc/zshrc that loads the nix-darwin environment.
