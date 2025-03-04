@@ -15,6 +15,8 @@
       "jsonnet"
       "terraform-docs"
       "terragrunt"
+      "golangci-lint"
+      "goreleaser"
     ];
 
     # masApps = {
