@@ -1,4 +1,5 @@
 {
+	"update.mode": "none",
 	"todo-tree.tree.showScanModeButton": false,
 	"workbench.iconTheme": "vscode-icons",
 	"editor.minimap.enabled": false,
