@@ -19,6 +19,9 @@ darwin-rebuild switch --flake ~/nix#mini
 
 ```shell
 nix flake update
+
+run-nix
+# or
 nix run nix-darwin -- switch --flake ~/nix#mini
 ```
 
