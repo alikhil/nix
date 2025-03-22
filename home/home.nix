@@ -94,7 +94,6 @@ programs.zsh = {
       enable = true;
       theme = "robbyrussell";
       plugins = [
-        "direnv"
         "kube-ps1"
         "git"
       ];
