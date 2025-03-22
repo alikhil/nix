@@ -17,12 +17,11 @@
       "python"
       "libpq"
       "ffmpeg"
-      "qcachegrind"
       "make"
       "ninja"
       "dfu-util"
-      "ccache"
       "helm"
+      "bcrypt"
     ];
 
     masApps = {
@@ -32,6 +31,8 @@
       "iMovie" = 408981434;
       "Wireguard" = 1451685025;
       "Parcel" = 639968404;
+      "Amphetamine" = 937984704;
+      "Numbers" = 409203825;
       # "1Password for Safari" = 1569813296;
     };
 
@@ -74,6 +75,8 @@
       whois
       yandex-cloud
       terraform
+      gh
+      minio-client
     ];
 
   # darwin-help, mynixos.com
@@ -93,8 +96,7 @@
 
   };
 
-  # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
+  # Auto upgrade nix package.
   # nix.package = pkgs.nix;
 
   # Necessary for using flakes on this system.
