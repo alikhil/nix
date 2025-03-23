@@ -48,15 +48,15 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".hammerspoon/init.lua".text = ''
-        hs.caffeinate.watcher.new(function(eventType)
-            if eventType == hs.caffeinate.watcher.screensDidUnlock then
-                -- Run your script here
-                hs.execute("/Users/alikkhilazhev/nix/home/scripts/show-wait.script")
-            end
-          end
-        ):start()
-      '';
+    # ".hammerspoon/init.lua".text = ''
+    #     hs.caffeinate.watcher.new(function(eventType)
+    #         if eventType == hs.caffeinate.watcher.screensDidUnlock then
+    #             -- Run your script here
+    #             hs.execute("/Users/alikkhilazhev/nix/home/scripts/show-wait.script")
+    #         end
+    #       end
+    #     ):start()
+    #   '';
   };
 
   # You can also manage environment variables but you will have to manually
