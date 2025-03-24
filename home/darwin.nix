@@ -69,7 +69,7 @@
       pre-commit
       gitleaks
       devenv
-      nixpkgs-fmt
+      nixfmt-rfc-style
       commitizen
       hadolint
       whois
