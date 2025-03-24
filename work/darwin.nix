@@ -68,6 +68,7 @@
       consul
       awscli
       updatecli
+      skhd
     ];
 
   # darwin-help, mynixos.com
@@ -113,6 +114,18 @@
     home = "/Users/a.khilazhev";
     shell = pkgs.zsh;
   };
+
+
+  services.skhd.enable = true;
+  services.skhd.package = pkgs.skhd;
+  # examples here https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
+  # https://github.com/koekeishiya/skhd/issues/1
+  services.skhd.skhdConfig = ''
+    cmd + ctrl - 0x25: skhd -k "ctrl - right"
+    cmd + ctrl - 0x26: skhd -k "ctrl - left"
+    cmd + ctrl - 0x22: skhd -k "ctrl - up"
+    cmd + ctrl - 0x28: skhd -k "ctrl - down"
+  '';
 
   security.pam.services.sudo_local.touchIdAuth = true;
 }
