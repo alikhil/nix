@@ -8,5 +8,6 @@
         "markdown": false,
         "scminput": false,
         "python": true
-    }
+    },
+    "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt"
 }
