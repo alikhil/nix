@@ -121,10 +121,10 @@
   # examples here https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
   # https://github.com/koekeishiya/skhd/issues/1
   services.skhd.skhdConfig = ''
-    cmd + ctrl - 0x25: skhd -k "ctrl - right"
-    cmd + ctrl - 0x26: skhd -k "ctrl - left"
-    cmd + ctrl - 0x22: skhd -k "ctrl - up"
-    cmd + ctrl - 0x28: skhd -k "ctrl - down"
+    cmd + shift - 0x25: skhd -k "ctrl - right"
+    cmd + shift - 0x26: skhd -k "ctrl - left"
+    cmd + shift - 0x22: skhd -k "ctrl - up"
+    cmd + shift - 0x28: skhd -k "ctrl - down"
   '';
 
   security.pam.services.sudo_local.touchIdAuth = true;
