@@ -123,8 +123,8 @@
   services.skhd.skhdConfig = ''
     cmd + shift - 0x25: skhd -k "ctrl - right"
     cmd + shift - 0x26: skhd -k "ctrl - left"
-    cmd + shift - 0x22: skhd -k "ctrl - up"
-    cmd + shift - 0x28: skhd -k "ctrl - down"
+    # cmd + shift - 0x22: skhd -k "ctrl - up"
+    # cmd + shift - 0x28: skhd -k "ctrl - down"
   '';
 
   security.pam.services.sudo_local.touchIdAuth = true;
