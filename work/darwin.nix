@@ -69,6 +69,7 @@
       awscli
       updatecli
       skhd
+      hadolint
     ];
 
   # darwin-help, mynixos.com
