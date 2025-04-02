@@ -9,5 +9,8 @@
         "scminput": false,
         "python": true
     },
-    "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt"
+    "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    }
 }
