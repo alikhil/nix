@@ -48,7 +48,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    # ".hammerspoon/init.lua".text = ''
+    ".hammerspoon/init.lua".text = '''';
     #     hs.caffeinate.watcher.new(function(eventType)
     #         if eventType == hs.caffeinate.watcher.screensDidUnlock then
     #             -- Run your script here
