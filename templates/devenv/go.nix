@@ -1,5 +1,7 @@
-{ pkgs, ... }:
-
+{ pkgs, inputs, ... }:
+let
+  pkgs-stable = import inputs.nixpkgs-stable { system = pkgs.stdenv.system; };
+in
 # See full reference at https://devenv.sh/reference/options/
 {
   # https://devenv.sh/packages/

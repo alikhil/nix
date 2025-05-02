@@ -95,7 +95,7 @@
       ];
     };
     shellAliases = import ../common/aliases.nix // import ./aliases.nix;
-    initExtra = ''
+    initContent = ''
       . "''${HOME}/.secret-env";
       bindkey -e
       bindkey '^[[1;9C' forward-word

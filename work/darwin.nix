@@ -70,6 +70,7 @@
       updatecli
       skhd
       hadolint
+      minio-client
     ];
 
   # darwin-help, mynixos.com

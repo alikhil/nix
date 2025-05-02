@@ -87,7 +87,7 @@
     };
   };
 
-programs.zsh = {
+  programs.zsh = {
     # https://rycee.gitlab.io/home-manager/options.xhtml#opt-programs.zsh.enable
     enable = true;
     oh-my-zsh = {

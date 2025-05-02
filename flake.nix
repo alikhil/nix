@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
@@ -30,7 +31,7 @@
 
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, home-manager, nur, nixpkgs-firefox-darwin, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nixpkgs-stable, nix-homebrew, homebrew-core, homebrew-cask, home-manager, nur, nixpkgs-firefox-darwin, ... }:
     {
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .#mini
@@ -69,6 +70,7 @@
             };
           }
         ];
+        inputs = { inherit nix-darwin nixpkgs-stable; };
       };
 
       # Expose the package set, including overlays, for convenience.
@@ -115,6 +117,7 @@
             };
           }
         ];
+        inputs = { inherit nix-darwin nixpkgs-stable; };
       };
 
       darwinPackages = self.darwinConfigurations."VDF4JP6D5V".pkgs + self.darwinConfigurations."mini".pkgs;
