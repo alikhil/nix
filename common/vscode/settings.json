@@ -63,7 +63,9 @@
 		"*": false,
 		"plaintext": true,
 		"markdown": true,
-		"scminput": false
+		"scminput": false,
+		"go": true,
+		"golang": true
 	},
 	"githubPullRequests.pullBranch": "never",
 	"terminal.integrated.env.osx": {

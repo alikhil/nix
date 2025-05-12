@@ -17,6 +17,7 @@
       "terragrunt"
       "golangci-lint"
       "goreleaser"
+      "fakeroot"
     ];
 
     # masApps = {
