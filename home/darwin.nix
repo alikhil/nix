@@ -24,6 +24,7 @@
       "bcrypt"
       "sqlmap"
       "sshpass"
+      "gnupg"
     ];
 
     masApps = {
@@ -80,7 +81,6 @@
       gh
       minio-client
       skhd
-      gnupg
     ];
 
   # darwin-help, mynixos.com
