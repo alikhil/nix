@@ -40,7 +40,13 @@
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  home.file = { };
+  home.file = {
+
+    ".gitignore".text = ''
+      .devenv/
+    '';
+
+  };
 
   # You can also manage environment variables but you will have to manually
   # source
@@ -71,6 +77,7 @@
     extraConfig = {
       core = {
         editor = "nano";
+        excludesFile = "~/.gitignore";
       };
       url = {
         "git@gitlab.iponweb.net:" = {
