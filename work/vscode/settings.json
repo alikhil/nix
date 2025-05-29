@@ -7,10 +7,16 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "python": true
+        "python": true,
+        "yaml": true
     },
     "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "terminal.integrated.enableVisualBell": true,
+    "accessibility.signals.terminalBell": {
+        "sound": "on",
+        "announcement": "auto"
     }
 }
