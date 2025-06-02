@@ -1,3 +1,3 @@
 {
-  run-nix = "nix run nix-darwin -- switch --flake ~/nix#mini";
+  run-nix = "sudo nix run nix-darwin -- switch --flake ~/nix#mini";
 }

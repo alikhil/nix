@@ -25,6 +25,8 @@
       "sqlmap"
       "sshpass"
       "gnupg"
+      "k6"
+      "kind"
     ];
 
     masApps = {
@@ -100,6 +102,7 @@
 
   };
 
+  system.primaryUser = "alikkhilazhev";
   # Auto upgrade nix package.
   # nix.package = pkgs.nix;
 
