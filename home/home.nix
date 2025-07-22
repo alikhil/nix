@@ -106,6 +106,7 @@
 
       PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
       export PATH=$PATH:/Users/alikkhilazhev/go
+      export PATH=$PATH:/Users/alikkhilazhev/.krew/bin
     '';
   };
 

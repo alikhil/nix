@@ -84,6 +84,7 @@
       minio-client
       skhd
       goreleaser
+      krew
     ];
 
   # darwin-help, mynixos.com
