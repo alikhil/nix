@@ -193,6 +193,7 @@
       grafana.vscode-jsonnet
       fredwangwang.vscode-hcl-format
       betajob.modulestf
+      ms-azuretools.vscode-containers
     ];
     userSettings =
       builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) //

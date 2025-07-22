@@ -12,7 +12,7 @@
     },
     "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
     "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+        "editor.defaultFormatter": null
     },
     "terminal.integrated.enableVisualBell": true,
     "accessibility.signals.terminalBell": {

@@ -91,6 +91,8 @@
 
   };
 
+  system.primaryUser = "a.khilazhev";
+
   # nix.package = pkgs.nix;
 
   # Necessary for using flakes on this system.
