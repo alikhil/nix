@@ -35,7 +35,7 @@
       "Ethernet Status" = 1186187538;
       "iMovie" = 408981434;
       "Wireguard" = 1451685025;
-      "Parcel" = 639968404;
+      # "Parcel" = 639968404;
       "Amphetamine" = 937984704;
       "Numbers" = 409203825;
       # "1Password for Safari" = 1569813296;
@@ -83,6 +83,7 @@
       gh
       minio-client
       skhd
+      goreleaser
     ];
 
   # darwin-help, mynixos.com

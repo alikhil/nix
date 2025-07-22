@@ -105,6 +105,7 @@
       bindkey '^[[1;9D' backward-word
 
       PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
+      export PATH=$PATH:/Users/alikkhilazhev/go
     '';
   };
 
