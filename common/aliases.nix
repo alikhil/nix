@@ -11,7 +11,6 @@
   kex = "kubectl exec";
   kg = "kubectl get";
   kdel = "kubectl delete";
-  klaw = "kubectl get pods --all-namespaces -o wide";
   kall = "kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found";
 
   kns = "kubens";
@@ -21,8 +20,8 @@
   kgn = "kubectl get nodes -L app_type";
   k = "kubectl";
   ktl = "kubectl";
-  refreshes = "kubectl get externalsecrets.external-secrets.io -A --no-headers | awk '{printf \"externalsecrets.external-secrets.io/%s -n %s\\n\", \$2, \$1; }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
-  refreshcss = "kubectl get css --no-headers | awk '{printf \"css/%s\\n\", \$1; }' | xargs -L 1 -I{}  bash -c ' kubectl annotate {} force-sync=$(date +%s) --overwrite'";
+  refreshes = "kubectl annotate --all -A externalsecrets.external-secrets.io force-sync=$(date +%s) --overwrite";
+  refreshcss = "kubectl annotate --all -A clustersecretstores.external-secrets.io force-sync=$(date +%s) --overwrite";
 
   kill_md = "launchctl unload /Library/LaunchAgents/com.microsoft.wdav.tray.plist";
 

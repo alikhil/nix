@@ -27,6 +27,7 @@
       "gnupg"
       "k6"
       "kind"
+      "golangci-lint"
     ];
 
     masApps = {
@@ -85,6 +86,7 @@
       skhd
       goreleaser
       krew
+      updatecli
     ];
 
   # darwin-help, mynixos.com
