@@ -40,4 +40,5 @@
   tfdoc = "terraform-docs markdown table";
   colima-start = "colima start --ssh-agent --cpu 4 --memory 4 --vm-type vz --vz-rosetta --very-verbose -a aarch64";
   dive = "docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive";
+  fixssh = "ssh-keygen -f ~/.ssh/known_hosts -R";
 }

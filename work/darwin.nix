@@ -72,6 +72,7 @@
       skhd
       hadolint
       minio-client
+      krew
     ];
 
   # darwin-help, mynixos.com
