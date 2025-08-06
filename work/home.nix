@@ -46,8 +46,9 @@
       .devenv/
     '';
 
-    "/Users/a.khilazhev/Library/Application Support/Code/User/settings.json" = { text = 
-      builtins.toJSON (builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) // builtins.fromJSON (builtins.readFile ./vscode/settings.json));
+    "/Users/a.khilazhev/Library/Application Support/Code/User/settings.json" = {
+      text =
+        builtins.toJSON (builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) // builtins.fromJSON (builtins.readFile ./vscode/settings.json));
     };
 
   };
@@ -115,96 +116,6 @@
       PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
       export PATH=$PATH:$HOME/.krew/bin
     '';
-  };
-  programs.vscode.enable = false;
-  programs.vscode.profiles.default = {
-    # https://nixos.wiki/wiki/Visual_Studio_Code
-    # https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
-
-
-    extensions = with pkgs.vscode-marketplace; [
-      adamhartford.vscode-base64
-      adpyke.codesnap
-      ahmadalli.vscode-nginx-conf
-      bbenoist.nix
-      chireia.darker-plus-material-red
-      christian-kohler.npm-intellisense
-      christian-kohler.path-intellisense
-      danijel-grabez.transliterate
-      davidanson.vscode-markdownlint
-      dotjoshjohnson.xml
-      dunstontc.dark-plus-syntax
-      eamodio.gitlens
-      earshinov.permute-lines
-      ecmel.vscode-html-css
-      editorconfig.editorconfig
-      esbenp.prettier-vscode
-      exiasr.hadolint
-      fisheva.eva-theme
-      foxundermoon.shell-format
-      fredwangwang.vscode-hcl-format
-      golang.go
-      hangxingliu.vscode-nginx-conf-hint
-      hashicorp.hcl
-      hashicorp.terraform
-      jinliming2.vscode-go-template
-      jock.svg
-      jq-syntax-highlighting.jq-syntax-highlighting
-      jsynowiec.vscode-insertdatestring
-      jtcontreras90.yaml-path-extractor
-      kevinrose.vsc-python-indent
-      mads-hartmann.bash-ide-vscode
-      magicstack.magicpython
-      mechatroner.rainbow-csv
-      mikestead.dotenv
-      mitchdenny.ecdc
-      ms-azuretools.vscode-docker
-      ms-python.debugpy
-      ms-python.isort
-      ms-python.python
-      ms-python.vscode-pylance
-      ms-vscode-remote.vscode-remote-extensionpack
-      ms-vscode.makefile-tools
-      ms-vscode.remote-explorer
-      ms-vscode.remote-server
-      ms-vsliveshare.vsliveshare
-      quicktype.quicktype
-      raynigon.nginx-formatter
-      redhat.vscode-commons
-      redhat.vscode-xml
-      redhat.vscode-yaml
-      rogalmic.zsh-debug
-      s-shemmee.dark-violetta
-      samuelcolvin.jinjahtml
-      streetsidesoftware.code-spell-checker
-      tamasfe.even-better-toml
-      technosophos.vscode-helm
-      tim-koehler.helm-intellisense
-      tinkertrain.theme-panda
-      visualstudioexptteam.intellicode-api-usage-examples
-      visualstudioexptteam.vscodeintellicode
-      vivaxy.vscode-conventional-commits
-      vscode-icons-team.vscode-icons
-      william-voyek.vscode-nginx
-      wk-j.vscode-httpie
-      wmaurer.change-case
-      wsds.theme-hacker
-      wyattferguson.jinja2-snippet-kit
-      yummygum.city-lights-theme
-      zhuangtongfa.material-theme
-      zxh404.vscode-proto3
-      bbenoist.nix
-      puppet.puppet-vscode
-      grafana.vscode-jsonnet
-      fredwangwang.vscode-hcl-format
-      betajob.modulestf
-      ms-azuretools.vscode-containers
-    ];
-    userSettings =
-      builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) //
-      builtins.fromJSON (builtins.readFile ./vscode/settings.json)
-    ;
-
   };
 
   programs.ssh = {
