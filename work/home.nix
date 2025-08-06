@@ -46,6 +46,10 @@
       .devenv/
     '';
 
+    "~/Library/Application Support/Code/User/settings.json" = { text = 
+      builtins.toJSON (builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) // builtins.fromJSON (builtins.readFile ./vscode/settings.json));
+    };
+
   };
 
   # You can also manage environment variables but you will have to manually
