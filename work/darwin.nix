@@ -55,7 +55,6 @@
       gitleaks
       devenv
       nixpkgs-fmt
-      vscode
       raycast
       zsh
       # firefox-bin

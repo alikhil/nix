@@ -112,7 +112,7 @@
       export PATH=$PATH:$HOME/.krew/bin
     '';
   };
-  programs.vscode.enable = true;
+  programs.vscode.enable = false;
   programs.vscode.profiles.default = {
     # https://nixos.wiki/wiki/Visual_Studio_Code
     # https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
