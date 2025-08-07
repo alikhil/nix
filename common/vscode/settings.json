@@ -139,18 +139,6 @@
 		"format": false,
 		"autoComplete": true
 	},
-	"go.alternateTools": {
-		"go": "${workspaceRoot}/.devenv/profile/bin/go",
-		"gomodifytags": "${workspaceRoot}/.devenv/profile/bin/gomodifytags",
-		"godef": "${workspaceRoot}/.devenv/profile/bin/godef",
-		"gofmt": "${workspaceRoot}/.devenv/profile/bin/gofmt",
-		"goimports": "${workspaceRoot}/.devenv/profile/bin/goimports",
-		"gopls": "${workspaceRoot}/.devenv/profile/bin/gopls",
-		"godoc": "${workspaceRoot}/.devenv/profile/bin/godoc",
-		"gotests": "${workspaceRoot}/.devenv/profile/bin/gotests",
-		"godex": "${workspaceRoot}/.devenv/profile/bin/godex",
-		"dlv": "${workspaceRoot}/.devenv/profile/bin/dlv"
-	},
 	"go.formatTool": "gofmt",
 	"go.autocompleteUnimportedPackages": true,
 	"go.testTimeout": "60s",

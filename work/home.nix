@@ -48,7 +48,7 @@
 
     "/Users/a.khilazhev/Library/Application Support/Code/User/settings.json" = {
       text =
-        builtins.toJSON (builtins.fromJSON (builtins.readFile ../common/vscode/settings.json) // builtins.fromJSON (builtins.readFile ./vscode/settings.json));
+        builtins.toJSON (lib.recursiveUpdate (builtins.fromJSON (builtins.readFile ../common/vscode/settings.json)) (builtins.fromJSON (builtins.readFile ./vscode/settings.json)));
     };
 
   };
