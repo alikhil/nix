@@ -63,7 +63,6 @@
       flyctl
       ngrok
       iterm2
-      obsidian
       telegram-desktop
       jq
       inetutils # telnet
