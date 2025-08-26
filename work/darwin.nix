@@ -18,6 +18,7 @@
       "golangci-lint"
       "goreleaser"
       "fakeroot"
+      "lftp"
     ];
 
     # masApps = {
