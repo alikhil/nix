@@ -65,6 +65,7 @@
       iterm2
       telegram-desktop
       jq
+      yq
       inetutils # telnet
       kubectl
       kubectx
