@@ -28,6 +28,7 @@
       "k6"
       "kind"
       "golangci-lint"
+      "nvm"
     ];
 
     masApps = {

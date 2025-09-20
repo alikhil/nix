@@ -107,6 +107,9 @@
       PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
       export PATH=$PATH:/Users/alikkhilazhev/go
       export PATH=$PATH:/Users/alikkhilazhev/.krew/bin
+      export NVM_DIR="/Users/alikkhilazhev/.nvm"
+      [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+      [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
     '';
   };
 
