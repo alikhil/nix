@@ -70,6 +70,7 @@
 	"githubPullRequests.pullBranch": "never",
 	"terminal.integrated.env.osx": {
 		"FIG_NEW_SESSION": "1",
+		"KUBECONFIG": "${env:HOME}/.kube/config.yaml"
 	},
 	"git.enableSmartCommit": true,
 	"terminal.integrated.defaultProfile.linux": "zsh",
