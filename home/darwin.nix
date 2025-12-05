@@ -40,6 +40,7 @@
       "Amphetamine" = 937984704;
       "Numbers" = 409203825;
       # "1Password for Safari" = 1569813296;
+      "Signal Shifter" = 6446061552;
     };
 
 
@@ -87,6 +88,7 @@
       goreleaser
       krew
       updatecli
+      uv
     ];
 
   # darwin-help, mynixos.com

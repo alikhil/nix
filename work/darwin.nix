@@ -27,6 +27,7 @@
     #   "Wireguard" = 1451685025;
     #   "1Password for Safari" = 1569813296;
     #   "Hidden Bar" = 1452453066;
+      # "Signal Shifter" = 6446061552;
     # };
 
 
