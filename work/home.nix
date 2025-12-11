@@ -120,11 +120,11 @@
 
   programs.ssh = {
     enable = true;
-    addKeysToAgent = "yes";
 
     matchBlocks = {
       "*.iponweb.net" = {
         user = "akhilazhev_criteo";
+        addKeysToAgent = "yes";
         forwardAgent = true;
         identityFile = "~/.ssh/id_ed25519";
         extraOptions = {

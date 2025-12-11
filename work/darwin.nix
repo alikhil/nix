@@ -19,6 +19,11 @@
       "goreleaser"
       "fakeroot"
       "lftp"
+      "kubeshark"
+      "python"
+      "pipx"
+      "etcd"
+      "kind"
     ];
 
     # masApps = {
